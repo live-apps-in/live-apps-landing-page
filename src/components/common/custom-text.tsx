@@ -16,6 +16,7 @@ interface TYPOGRAPHY_PROPS {
     | "success"
     | "info"
     | "black"
+    | "white"
     | "default";
   style?: TypographyProps["style"];
   align?: "center" | "left" | "right";

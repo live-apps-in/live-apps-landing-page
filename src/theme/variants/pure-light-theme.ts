@@ -21,7 +21,10 @@ export const PureLightTheme = createTheme({
   colors: themeColors,
   general: {
     bodyBg: "#FFFFFF",
-    fontFamily: "'Montserrat', sans-serif",
+    fontFamily: "'Work Sans', sans-serif",
+  },
+  layouts: {
+    public: {},
   },
   header: {
     background: "#F6F8FA",

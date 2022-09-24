@@ -5,6 +5,7 @@ import { navigationLinks } from "./navigation-links";
 import { Helmet } from "react-helmet";
 import { Public } from "src/guard";
 import { HomePageContent } from "src/content";
+import { PublicLayout } from "src/layouts";
 
 export const routes: ROUTE_DEFINITION[] = [
   {
@@ -15,7 +16,9 @@ export const routes: ROUTE_DEFINITION[] = [
           <title>Ping</title>
         </Helmet>
         <Public>
-          <HomePageContent />
+          <PublicLayout>
+            <HomePageContent />
+          </PublicLayout>
         </Public>
       </>
     ),

@@ -60,6 +60,9 @@ declare module "@mui/material/styles" {
       bodyBg: STYLES["color"];
       fontFamily?: STYLES["fontFamily"];
     };
+    layouts: {
+      public: STYLES;
+    };
     header: {
       height: string;
       background: STYLES["color"];
@@ -87,6 +90,9 @@ declare module "@mui/material/styles" {
     general: {
       bodyBg: STYLES["color"];
       fontFamily?: STYLES["fontFamily"];
+    };
+    layouts: {
+      public: STYLES;
     };
     header: {
       height: string;

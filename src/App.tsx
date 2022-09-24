@@ -24,6 +24,9 @@ import createEmotionCache from "src/createEmotionCache";
 // and for some font style changes
 import CssBaseline from "@mui/material/CssBaseline";
 
+// react-scroll-parallax
+import { ParallaxProvider } from "react-scroll-parallax";
+
 // react-query setup -- https://react-query.tanstack.com/quick-start
 import { QueryClientProvider, QueryClient } from "react-query";
 import { CustomModal, ErrorBoundary, FlashMessage } from "src/components";
@@ -41,22 +44,24 @@ const App: React.FC = () => {
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <QueryClientProvider client={queryClient}>
             <StoreProvider store={store}>
-              <ThemeProvider>
-                <SnackbarProvider
-                  maxSnack={6}
-                  anchorOrigin={{
-                    vertical: "bottom",
-                    horizontal: "right",
-                  }}
-                >
-                  <CssBaseline />
-                  <FlashMessage />
-                  <CustomModal />
-                  <AuthProvider>
-                    <Routes />
-                  </AuthProvider>
-                </SnackbarProvider>
-              </ThemeProvider>
+              <ParallaxProvider>
+                <ThemeProvider>
+                  <SnackbarProvider
+                    maxSnack={6}
+                    anchorOrigin={{
+                      vertical: "bottom",
+                      horizontal: "right",
+                    }}
+                  >
+                    <CssBaseline />
+                    <FlashMessage />
+                    <CustomModal />
+                    <AuthProvider>
+                      <Routes />
+                    </AuthProvider>
+                  </SnackbarProvider>
+                </ThemeProvider>
+              </ParallaxProvider>
             </StoreProvider>
           </QueryClientProvider>
         </LocalizationProvider>
