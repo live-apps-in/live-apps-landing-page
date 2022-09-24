@@ -6,7 +6,7 @@
 
 import { styled } from "@mui/material";
 import { CustomText, XYCenter } from "src/components";
-import { Parallax } from "react-scroll-parallax";
+import { mediaQuery } from "src/theme";
 
 const StyledHomePageContainer = styled("div")`
   width: 100%;
@@ -38,7 +38,10 @@ const StyledHeading = styled(CustomText)(
   font-weight: 800;
   padding: 30px 3px;
   letter-spacing: 5px;
-  font-size: 60px;
+  font-size: 30px;
+  ${mediaQuery.up("sm")} {
+    font-size: 60px;
+  }
 `
 );
 
@@ -62,7 +65,10 @@ const NeonAnimationSection = styled(XYCenter)`
 
 const NeonAnimatedText = styled(CustomText)`
   font-weight: 900;
-  font-size: 50px;
+  font-size: 30px;
+  ${mediaQuery.up("sm")} {
+    font-size: 50px;
+  }
   color: #6f6;
   animation: pulse-text 0.8s infinite alternate ease-in-out;
   @keyframes pulse-text {
