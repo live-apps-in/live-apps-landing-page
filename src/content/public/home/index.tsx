@@ -5,6 +5,7 @@
 // import { useAuth } from "src/hooks";
 
 import { styled } from "@mui/material";
+import { Contributors } from "./contributors";
 import { Intro } from "./intro";
 import { ProjectDetails } from "./project-details";
 import { Projects } from "./projects";
@@ -35,6 +36,7 @@ export const HomePageContent = () => {
       <Intro />
       <Projects />
       <ProjectDetails />
+      <Contributors />
     </StyledHomePageContainer>
   );
 };

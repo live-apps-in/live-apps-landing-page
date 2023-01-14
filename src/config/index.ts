@@ -120,6 +120,9 @@ export const homePageConfig = {
       ]
     },
   ],
-
-  
+  contributors: [
+    { name: 'Dikshit', image: 'https://media.licdn.com/dms/image/D5603AQEgdtp1FdEptQ/profile-displayphoto-shrink_800_800/0/1670564217455?e=1678924800&v=beta&t=mT0ulR2HUys4wX8kR_OkXqx4Oze86vUHleLoTpJp-Dc', role: 'Front-end Developer', link: 'https://portfolio.dikshit.live' },
+    { name: 'Jaga', image: 'https://media.licdn.com/dms/image/C4D03AQE36ew5sx7HmQ/profile-displayphoto-shrink_800_800/0/1656441989564?e=1678924800&v=beta&t=kFq77FkWMx7inw5MZpfY2wTwQLLSQbEE8LafXx48UMA', role: 'Back-end Developer', link: 'https://portfolio.dikshit.live' },
+    { name: 'Inderajith', image: 'https://media.licdn.com/dms/image/C5103AQHK3EqoFyO_2A/profile-displayphoto-shrink_800_800/0/1580924156215?e=1678924800&v=beta&t=sDpZaqptgFpjv60-Z39rGHksBilmAAYVbApzZNJfjCg', role: 'Mobile App Developer', link: 'https://portfolio.dikshit.live' }
+  ]
 }
