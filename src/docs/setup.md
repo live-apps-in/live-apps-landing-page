@@ -8,17 +8,13 @@
 - `npm install react-number-format`
 - `npm install react-input-mask`
 - `npm install material-ui-color`
+- `npm install react-phone-number-input`
+- `npm install react-dropzone`
 - `npm install moment`
 
 # Form util libraries
 
 - `npm i formik yup yup-phone`
-
-# Install libraries for form components
-
-- `npm install react-phone-number-input`
-- `npm install react-number-format`
-- `npm install react-input-mask`
 
 # Linting
 

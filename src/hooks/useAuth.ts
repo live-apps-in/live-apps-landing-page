@@ -1,5 +1,5 @@
 import { authApi } from "src/api";
-import { authSetup } from "src/data";
+import { authConfig } from "src/config";
 import { AUTH_DATA, LOGIN_AUTH_PROPS, USE_AUTH_OPTIONS } from "src/model";
 import { useSelector } from "src/redux";
 import { deleteCookie, getCookie, setCookie } from "src/utils";
@@ -35,7 +35,7 @@ export const useAuth = () => {
       try {
         const data = await authApi.login(loginData);
         if (updateRedux) authActions.login(data);
-        setCookie(authSetup.tokenAccessor, data.token);
+        setCookie(authConfig.tokenAccessor, data.token);
         if (updateRedux) authActions.login(data);
         resolve(data);
       } catch (err) {
@@ -50,13 +50,13 @@ export const useAuth = () => {
     return new Promise(async (resolve, reject) => {
       try {
         await authApi.logout();
-        deleteCookie(authSetup.tokenAccessor);
+        deleteCookie(authConfig.tokenAccessor);
         window.location.reload();
         if (updateRedux) authActions.logout();
         resolve();
       } catch (err) {
         if (updateRedux) authActions.logout();
-        deleteCookie(authSetup.tokenAccessor);
+        deleteCookie(authConfig.tokenAccessor);
         window.location.reload();
         reject(err);
       }

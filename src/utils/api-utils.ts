@@ -1,6 +1,6 @@
 import axios, { AxiosError } from "axios";
 import { getCookie } from "src/utils";
-import { authSetup } from "src/data";
+import { authConfig } from "src/config";
 
 export const getError = (errorObject: Error | AxiosError) => {
   if (axios.isAxiosError(errorObject)) {
@@ -42,7 +42,7 @@ export const axiosInstance = axios.create({
 // setting token in header for each request
 axiosInstance.interceptors.request.use(
   (config) => {
-    let token = getCookie(authSetup.tokenAccessor); // getting token from cookies
+    let token = getCookie(authConfig.tokenAccessor); // getting token from cookies
     if (token && config.headers)
       config.headers["Authorization"] = `Bearer ${token}`;
     return config;
