@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet";
 import { Public } from "src/guard";
 import { HomePageContent } from "src/content/public";
 import { PublicLayout } from "src/layouts";
+import { projectConfig } from "src/config";
 
 export const routes: ROUTE_DEFINITION[] = [
   {
@@ -13,7 +14,7 @@ export const routes: ROUTE_DEFINITION[] = [
     element: (
       <>
         <Helmet>
-          <title>Ping</title>
+          <title>{projectConfig.title}</title>
         </Helmet>
         <Public>
           <PublicLayout>

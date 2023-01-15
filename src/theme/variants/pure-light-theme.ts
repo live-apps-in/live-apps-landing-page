@@ -7,12 +7,12 @@ import { mediaQuery } from "../viewport";
 const themeColors = {
   primary: "#5569ff",
   secondary: "#6E759F",
-  success: "#3DAB54",
+  success: "#CCE069",
   warning: "#FFA319",
   error: "#FF1943",
   info: "#33C2FF",
   default: "#353535",
-  black: "#223354",
+  black: "#545454",
   white: "#ffffff",
   link: "#3392ff",
 };
@@ -125,6 +125,7 @@ export const PureLightTheme = createTheme({
     },
     body2: {
       fontSize: 14,
+      color: alpha(themeColors.black, 0.2),
     },
     caption: {
       fontSize: 13,

@@ -4,8 +4,8 @@ import { NAVIGATION_LINKS } from "src/routes";
 
 const NavigationLinksContainer = styled(FlexRow)`
     
-`
+`;
 
 export const Navigation: React.FC<{navigationLinks?: NAVIGATION_LINKS}> = ({ navigationLinks = [] }) => {
-    return <NavigationLinksContainer>Navigation Links</NavigationLinksContainer>
-}
+    return <NavigationLinksContainer>Navigation Links</NavigationLinksContainer>;
+};

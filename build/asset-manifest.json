@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3afd01a9.css",
+    "main.js": "/static/js/main.d56fae04.js",
+    "static/js/787.a633a771.chunk.js": "/static/js/787.a633a771.chunk.js",
+    "static/media/ai-sin-wave-cropped.gif": "/static/media/ai-sin-wave-cropped.e11a5ed2647fea20ca0b.gif",
+    "static/media/WorkSans-Medium.ttf": "/static/media/WorkSans-Medium.f1dd9ac4126d93c6baeb.ttf",
+    "static/media/WorkSans-SemiBold.ttf": "/static/media/WorkSans-SemiBold.8988ce2e3e8957a63db8.ttf",
+    "static/media/WorkSans-ExtraBold.ttf": "/static/media/WorkSans-ExtraBold.d221515a328f2d7c21c7.ttf",
+    "static/media/WorkSans-Bold.ttf": "/static/media/WorkSans-Bold.aa43e32a4b4e4ffe0942.ttf",
+    "static/media/WorkSans-ExtraLight.ttf": "/static/media/WorkSans-ExtraLight.a8f56c4e576f67cc442b.ttf",
+    "static/media/WorkSans-Light.ttf": "/static/media/WorkSans-Light.1ca2c48a9aa9f5cb1e30.ttf",
+    "static/media/WorkSans-Regular.ttf": "/static/media/WorkSans-Regular.ca211a55c3d9d8690c63.ttf",
+    "static/media/WorkSans-Black.ttf": "/static/media/WorkSans-Black.6d1eb44447a907477ba6.ttf",
+    "static/media/WorkSans-Thin.ttf": "/static/media/WorkSans-Thin.336700fa8bf1eb9f510d.ttf",
+    "static/media/WorkSans-SemiBoldItalic.ttf": "/static/media/WorkSans-SemiBoldItalic.bc286f6496f8db17ae4f.ttf",
+    "static/media/WorkSans-ExtraBoldItalic.ttf": "/static/media/WorkSans-ExtraBoldItalic.9efb1d0dd94687d7df73.ttf",
+    "static/media/WorkSans-BoldItalic.ttf": "/static/media/WorkSans-BoldItalic.8de4fdf1507cca3f5987.ttf",
+    "static/media/WorkSans-MediumItalic.ttf": "/static/media/WorkSans-MediumItalic.12667f651ff4c1178f1b.ttf",
+    "static/media/WorkSans-ExtraLightItalic.ttf": "/static/media/WorkSans-ExtraLightItalic.5b2255252393b49d4710.ttf",
+    "static/media/WorkSans-BlackItalic.ttf": "/static/media/WorkSans-BlackItalic.6a63d45712215eb76e3a.ttf",
+    "static/media/WorkSans-LightItalic.ttf": "/static/media/WorkSans-LightItalic.b3520c398eff646622e9.ttf",
+    "static/media/WorkSans-ThinItalic.ttf": "/static/media/WorkSans-ThinItalic.49093921be6dc7fde090.ttf",
+    "index.html": "/index.html",
+    "main.3afd01a9.css.map": "/static/css/main.3afd01a9.css.map",
+    "main.d56fae04.js.map": "/static/js/main.d56fae04.js.map",
+    "787.a633a771.chunk.js.map": "/static/js/787.a633a771.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3afd01a9.css",
+    "static/js/main.d56fae04.js"
+  ]
+}

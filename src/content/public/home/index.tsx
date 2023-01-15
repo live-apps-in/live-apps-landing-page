@@ -9,10 +9,10 @@ import { Contributors } from "./contributors";
 import { Intro } from "./intro";
 import { ProjectDetails } from "./project-details";
 import { Projects } from "./projects";
+import { Technologies } from "./technologies";
 
 const StyledHomePageContainer = styled("div")`
   width: 100%;
-  height: 100%;
   min-height: 100%;
 `;
 
@@ -35,6 +35,7 @@ export const HomePageContent = () => {
     <StyledHomePageContainer>
       <Intro />
       <Projects />
+      <Technologies />
       <ProjectDetails />
       <Contributors />
     </StyledHomePageContainer>

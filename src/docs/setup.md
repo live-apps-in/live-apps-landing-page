@@ -1,20 +1,20 @@
 # Install MUI form components
 
-- `npm install @mui/material @emotion/react @emotion/styled`
-- `npm install @mui/icons-material`
-- `npm install @material-ui/core`
-- `npm install material-ui-phone-number`
+- `npm install @mui/material@^5.8.5 @emotion/react@^11.9.3 @emotion/styled@^11.9.3`
+- `npm install @mui/icons-material@^5.8.4`
+- `npm install @material-ui/core@^4.12.4`
+- `npm install material-ui-phone-number@^3.0.0`
 - `npm i react-day-picker@^7.4.10`
-- `npm install react-number-format`
-- `npm install react-input-mask`
-- `npm install material-ui-color`
-- `npm install react-phone-number-input`
-- `npm install react-dropzone`
-- `npm install moment`
+- `npm install react-number-format@^4.9.3`
+- `npm install react-input-mask@^2.0.4`
+- `npm install material-ui-color@^1.2.0`
+- `npm install react-phone-number-input@^3.2.6`
+- `npm install react-dropzone@^14.2.2`
+- `npm install moment@^2.29.4`
 
 # Form util libraries
 
-- `npm i formik yup yup-phone`
+- `npm i formik@^2.2.9 yup@^0.32.11 yup-phone@^1.3.2`
 
 # Linting
 

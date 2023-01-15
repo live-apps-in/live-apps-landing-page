@@ -1,17 +1,21 @@
-import { styled } from "@mui/material"
-import { CustomText, XYCenter } from "src/components"
-import { homePageConfig } from "src/config"
-import { Contributor } from "./contributor"
+import { styled } from "@mui/material";
+import { CustomText, FlexColumn, XYCenter } from "src/components";
+import { homePageConfig } from "src/config";
+import { layoutSettings } from "src/layouts/public/layout-settings";
+import { Contributor } from "./contributor";
 
-const ContributorsContainerWrapper = styled('div')`
-    padding: 10px;
-`
+const ContributorsContainerWrapper = styled(FlexColumn)`
+    padding: 20px 10vw;
+    min-height: calc(100vh - ${layoutSettings.header.height});
+    justify-content: center;
+    gap: 50px;
+`;
 
 const ContributorsContentContainer = styled(XYCenter)`
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
-`
+    gap: 20px;
+`;
 
 export const Contributors: React.FC = () => {
     return (
@@ -23,5 +27,5 @@ export const Contributors: React.FC = () => {
                 ))}
             </ContributorsContentContainer>
         </ContributorsContainerWrapper>
-    )
-}
+    );
+};

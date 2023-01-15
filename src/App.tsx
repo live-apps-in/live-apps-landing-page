@@ -24,6 +24,9 @@ import createEmotionCache from "src/createEmotionCache";
 // and for some font style changes
 import CssBaseline from "@mui/material/CssBaseline";
 
+// custom-css
+import "./assets/scss/global.scss";
+
 // react-scroll-parallax
 import { ParallaxProvider } from "react-scroll-parallax";
 

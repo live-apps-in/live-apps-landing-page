@@ -2,11 +2,10 @@
 import { Logo } from "./logo";
 import { styled } from "@mui/material";
 import { NAVIGATION_LINKS } from "src/routes";
-import { YCenter, JustifyBetween } from "src/components";
-import { Navigation } from "../navigation";
+import { JustifyBetween } from "src/components";
 
 const StyledHeader = styled(JustifyBetween)`
-  padding: 20px;
+  padding: 10px 10vw 0;
   align-items: center;
 `;
 

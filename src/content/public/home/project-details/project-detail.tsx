@@ -1,68 +1,90 @@
-import { Divider, styled } from "@mui/material"
-import { CustomText, FlexRow } from "src/components"
-import { homePageConfig } from "src/config"
+import { Divider, styled } from "@mui/material";
+import { CustomText, FlexColumn, FlexRow, JustifyBetween } from "src/components";
+import { homePageConfig } from "src/config";
+import { mediaQuery } from "src/theme";
 
-const ProjectDetailContainer = styled('div')`
+const ProjectDetailContainer = styled(FlexColumn)`
     padding: 10px;
-`
+    gap: 30px;
+`;
 
-const ProjectDetailTileImageWrapper = styled('div')`
-    img {
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
-    }
-`
+const ProjectDetailTitleContainer = styled(FlexColumn)`
+    width: 100%;
+`;
 
-const ProjectDetailTitleContainer = styled(FlexRow)`
+const ProjectDetailTitleSection = styled(JustifyBetween)`
     gap: 10px;
     align-items: center;
-`
-const ProjectDetailFeaturesContainer = styled('div')`
-    padding: 5px;
-`
+    img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+    }
+`;
 
-const ProjectDetailFeatureContainer = styled('div')`
-    
-`
+const ProjectDetailTitleDescription = styled("div")``;
 
-const ProjectDetailFeatureTitleContainer = styled('div')`
+const ProjectDetailFeaturesContainer = styled(FlexRow)(({theme}) => `
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    ${mediaQuery.up("md")} {
+        > div:not(:last-child) {
+            border-right: 1px solid ${theme.colors.success};
+        }
+    }
+`);
 
-`
+const ProjectDetailFeatureContainer = styled(FlexColumn)`
+    flex: 1;
+    min-width: 200px;
+    width: 100%;
+    padding: 0 20px;
+    ${mediaQuery.up("md")} {
+        width: 25%;
+        min-width: 25%;
+    }
+`;
 
-const ProjectDetailFeatureDescriptionsContainer = styled('ul')`
+const ProjectDetailFeatureTitleContainer = styled("div")`
 
-`
+`;
 
-const ProjectDetailFeatureDescriptionContainer = styled('li')`
+const ProjectDetailFeatureDescriptionsContainer = styled("ul")`
 
-`
+`;
+
+const ProjectDetailFeatureDescriptionContainer = styled("li")`
+
+`;
 
 export const ProjectDetail: React.FC<typeof homePageConfig.projects[0]> = (props) => {
     return (
         <>
             <ProjectDetailContainer>
                 <ProjectDetailTitleContainer>
-                    <ProjectDetailTileImageWrapper>
+                    <ProjectDetailTitleSection>
+                        <CustomText variant="h3" style={{ fontWeight: "bold" }}>{props.name}</CustomText>
                         <img src={props.image} alt={props.name} />
-                    </ProjectDetailTileImageWrapper>
-                    <CustomText variant="h3">{props.name}</CustomText>
+                    </ProjectDetailTitleSection>
+                    <ProjectDetailTitleDescription>
+                        <CustomText variant="body2">{props.description}</CustomText>
+                    </ProjectDetailTitleDescription>
                 </ProjectDetailTitleContainer>
-                <ProjectDetailFeatureContainer>
-                    {props.features.map((feature, index) => <>
-                            <ProjectDetailFeatureTitleContainer key={index}>
-                                {feature.name}
+                <ProjectDetailFeaturesContainer>
+                    {props.features.map((feature, index) => <ProjectDetailFeatureContainer key={index}>
+                            <ProjectDetailFeatureTitleContainer>
+                                <CustomText variant="h5" color='success'>{feature.name}</CustomText>
                             </ProjectDetailFeatureTitleContainer>
                             {feature.descriptions.map((description, index) => <ProjectDetailFeatureDescriptionsContainer key={index}>
                                 <ProjectDetailFeatureDescriptionContainer>
                                     {description}
                                 </ProjectDetailFeatureDescriptionContainer>
                             </ProjectDetailFeatureDescriptionsContainer>)}
-                        </>)
+                        </ProjectDetailFeatureContainer>)
                     }
-                </ProjectDetailFeatureContainer>
+                </ProjectDetailFeaturesContainer>
             </ProjectDetailContainer>
             <Divider />
         </>
-    )
-}
+    );
+};
