@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Start New Container') {
             steps {
-                sh 'docker run -p 3000:3000 -d --name live-apps-landing-page live-apps-landing-page'
+                sh 'docker run -p 3004:3000 -d --name live-apps-landing-page live-apps-landing-page'
             }
         }
     }
