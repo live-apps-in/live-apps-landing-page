@@ -1,27 +1,34 @@
 import { createTheme, alpha } from "@mui/material";
 import "@mui/lab/themeAugmentation";
 import { mediaQuery } from "../viewport";
+import { STYLES } from '../utils';
 
 // import i18n from 'src/i18n/i18n';
 
 const themeColors = {
+  // 017AB1
   primary: "#5569ff",
   secondary: "#6E759F",
   success: "#CCE069",
-  warning: "#FFA319",
+  warning: "#f6ff7a",
   error: "#FF1943",
   info: "#33C2FF",
   default: "#353535",
   black: "#545454",
+  pureBlack: 'black',
   white: "#ffffff",
   link: "#3392ff",
+};
+
+export const commonTypographyStyles: STYLES = {
+  fontFamily: "'Nunito', sans-serif",
 };
 
 export const PureLightTheme = createTheme({
   colors: themeColors,
   general: {
     bodyBg: "#FFFFFF",
-    fontFamily: "'Work Sans', sans-serif",
+    fontFamily: "'Nunito', sans-serif",
   },
   layouts: {
     public: {},
@@ -35,6 +42,7 @@ export const PureLightTheme = createTheme({
   componentCustomStyles: {
     // typography
     h1: {
+      ...commonTypographyStyles,
       fontWeight: 700,
       fontSize: "35px",
       margin: "4px 2px",
@@ -44,6 +52,7 @@ export const PureLightTheme = createTheme({
       },
     },
     h2: {
+      ...commonTypographyStyles,
       fontWeight: 700,
       fontSize: "30px",
       margin: "4px 2px",
@@ -53,6 +62,7 @@ export const PureLightTheme = createTheme({
       },
     },
     h3: {
+      ...commonTypographyStyles,
       fontWeight: 500,
       fontSize: "25px",
       lineHeight: 1,
@@ -63,6 +73,7 @@ export const PureLightTheme = createTheme({
       },
     },
     h4: {
+      ...commonTypographyStyles,
       fontWeight: 500,
       fontSize: "20px",
       margin: "3px 2px",
@@ -71,6 +82,7 @@ export const PureLightTheme = createTheme({
       },
     },
     h5: {
+      ...commonTypographyStyles,
       fontWeight: 500,
       fontSize: "17px",
       margin: "3px 2px",
@@ -79,6 +91,7 @@ export const PureLightTheme = createTheme({
       },
     },
     h6: {
+      ...commonTypographyStyles,
       fontSize: "15px",
       fontWeight: 500,
       margin: "3px 2px",
@@ -87,6 +100,7 @@ export const PureLightTheme = createTheme({
       },
     },
     p: {
+      ...commonTypographyStyles,
       fontWeight: 500,
       fontSize: "14px",
       margin: "3px 2px",
@@ -95,47 +109,59 @@ export const PureLightTheme = createTheme({
       },
     },
     pre: {
+      ...commonTypographyStyles,
       fontWeight: 300,
       fontSize: "15px",
       color: themeColors.black,
     },
     span: {
+      ...commonTypographyStyles,
       fontSize: "14px",
       color: themeColors.black,
     },
     link: {
+      ...commonTypographyStyles,
       textDecoration: "none",
     },
     label: {
+      ...commonTypographyStyles,
       fontFamily: "Gilroy",
       fontWeight: 500,
       margin: "5px 0",
     },
     subtitle1: {
+      ...commonTypographyStyles,
       fontSize: 14,
       color: alpha(themeColors.black, 0.7),
     },
     subtitle2: {
+      ...commonTypographyStyles,
       fontWeight: 400,
       fontSize: 15,
       color: alpha(themeColors.black, 0.7),
     },
     body1: {
+      ...commonTypographyStyles,
       fontSize: 14,
     },
     body2: {
+      ...commonTypographyStyles,
       fontSize: 14,
+      fontWeight: 300,
       color: alpha(themeColors.black, 0.2),
     },
     caption: {
+      ...commonTypographyStyles,
       fontSize: 13,
       textTransform: "uppercase",
       color: alpha(themeColors.black, 0.5),
     },
     button: {
+      ...commonTypographyStyles,
       fontWeight: 600,
     },
     overline: {
+      ...commonTypographyStyles,
       fontSize: 13,
       fontWeight: 700,
       textTransform: "uppercase",

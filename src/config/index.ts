@@ -1,3 +1,5 @@
+import { AppLogoFullImage, KittyChanLogo, MaterialUILogo, NodeJSLogo, ReactLogo } from "src/assets";
+
 export const authConfig = {
   authPage: "/auth/login", // exact page where the user will be redirected if not loggedin
   signupPage: "/auth/signup",
@@ -29,65 +31,78 @@ export const homePageConfig = {
   intro: {
     title: 'Welcome to Live Apps',
     slogan: 'Developing something bigger',
-    description: 'We are building projects to learn and help others learn. Join our team of passionate contributors and make a difference in the open-source community. Help us build the future of web development.'
+    description: 'We are building projects to learn and help others learn. Join our team of passionate contributors and make a difference in the open-source community. Help us build the future of web development'
   },
   projects: [
     { 
-      name: 'Kitty Chan', 
+      name: 'kitty chan', 
       link: 'https://jagalive.co', 
-      image: 'https://cdn.discordapp.com/icons/1017387720902967347/2403bfd7aef0c14c6a1a5c4136c7de7f.webp?size=240',
-      description: 'Serving 300+ Users in 6 Discord Servers. Kitty chan is a Discord Bot, powerful enough to moderate server.',
+      image: KittyChanLogo,
+      id: 'kittychan',
+      description: 'Serving 300+ Users in 6 Discord Servers. Kitty chan is a Discord Bot, powerful enough to moderate server',
+      isBeta: false,
       features: [
         {
           name: 'Language Control',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Strong Language Detection',
-            'Non-English Detection',
+            'Strong Language Detection.',
+            'Non-English Detection.',
           ]
         },
         {
           name: 'Portal',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Enable messages across different servers',
-            'Filter potential spam messages and mentions',
+            'Enable messages across different servers.',
+            'Filter potential spam messages and mentions.',
           ]
         },
         {
           name: 'Game matchmaking',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Detect players if someone wants to play VALORANT',
-            'Find players based on their rank',
+            'Detect players if someone wants to play VALORANT.',
+            'Find players based on their rank.',
           ]
         },
         {
           name: 'Hands-free text',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Send texts from Amazon Alexa to discord server',
-            'Send texts from Google Assistant to discord server',
+            'Send texts from Amazon Alexa to discord server.',
+            'Send texts from Google Assistant to discord server.',
           ]
         }
       ]
     },
     {
-      name: 'Ping', 
+      name: 'Ping',
       link: 'https://jagalive.co', 
-      image: 'https://cdn.discordapp.com/icons/1017387720902967347/2403bfd7aef0c14c6a1a5c4136c7de7f.webp?size=240',
-      description: 'Description of the project',
+      image: AppLogoFullImage,
+      id: 'ping',
+      description: 'A chat application inspired from Discord',
+      isBeta: true,
       features: [
         {
-          name: 'Feature Name',
+          name: 'Profile',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
+            'Free Animated profile banners and pictures.',
           ]
         },
         {
-          name: 'Feature Name',
+          name: 'High Resolution',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
+            'Source Quality Audio & Video Streaming.',
+            'Larger File upload.',
           ]
         }
       ]
@@ -95,23 +110,35 @@ export const homePageConfig = {
     { 
       name: 'LiveCord', 
       link: 'https://jagalive.co', 
-      image: 'https://cdn.discordapp.com/icons/1017387720902967347/2403bfd7aef0c14c6a1a5c4136c7de7f.webp?size=240',
-      description: 'Description of the project',
+      image: AppLogoFullImage,
+      id: 'livecord',
+      description: 'Replace default Discord Bot Moderation from within Discord to a Web Page',
+      isBeta: true,
       features: [
         {
-          name: 'Feature Name',
+          name: 'Customization',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
+            'Manage your server from your Web Browser.',
+            'Customize how kitty chan works in your Server.',
           ]
         },
         {
-          name: 'Feature Name',
+          name: 'Security',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
+            'You can specify teh permission for Bot control from the Web browser.',
+            'LiveCord is protected with 2FA.',
+          ]
+        },
+        {
+          name: 'Limitations',
+          isBeta: false,
+          isLimitation: true,
+          descriptions: [
+            'LiveCord only works with Live Apps Bots (kitty chan as of now)',
           ]
         }
       ]
@@ -119,23 +146,26 @@ export const homePageConfig = {
     { 
       name: 'AirNotion', 
       link: 'https://jagalive.co', 
-      image: 'https://cdn.discordapp.com/icons/1017387720902967347/2403bfd7aef0c14c6a1a5c4136c7de7f.webp?size=240',
-      description: 'Description of the project',
+      image: AppLogoFullImage,
+      id: 'airnotion',
+      description: 'Use Amazon Alexa or Google Assistant to Modify your Notion database',
+      isBeta: true,
       features: [
         {
-          name: 'Feature Name',
+          name: 'Accessibility',
+          isBeta: false,
+          isLimitation: false,
           descriptions: [
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
+            'Use your Voice Assistant to modify pages, blocks, database in your Notion Workspace.',
           ]
         },
         {
-          name: 'Feature Name',
+          name: 'Limitations',
+          isBeta: false,
+          isLimitation: true,
           descriptions: [
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
-            'Description of the feature. Description of the feature. Description of the feature. Description of the feature. Description of the feature.',
+            'AirNotion should be self-hosted and certain API keys needs to be added.',
+            'Still in early-stage of development.',
           ]
         }
       ]
@@ -145,25 +175,25 @@ export const homePageConfig = {
     {
       name: 'React JS',
       link: 'https://reactjs.org/',
-      image: 'https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg',
+      image: ReactLogo,
       description: 'A JavaScript library for building user interface'
     },
     {
       name: 'Node JS',
       link: 'https://nodejs.org/',
-      image: 'https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg',
+      image: NodeJSLogo,
       description: 'JavaScript runtime environment'
     },
     {
       name: 'React Native',
       link: 'https://reactnative.dev/',
-      image: 'https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg',
+      image: ReactLogo,
       description: 'Native apps for Android and iOS'
     },
     {
       name: 'Material UI',
       link: 'https://reactnative.dev/',
-      image: 'https://d33wubrfki0l68.cloudfront.net/554c3b0e09cf167f0281fda839a5433f2040b349/ecfc9/img/header_logo.svg',
+      image: MaterialUILogo,
       description: 'Move faster with intuitive React UI tools'
     },
   ],

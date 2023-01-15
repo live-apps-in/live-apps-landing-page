@@ -48,6 +48,7 @@ export type THEME_COLORS = {
   error: STYLES["color"];
   info: STYLES["color"];
   black: STYLES["color"];
+  pureBlack: STYLES["color"];
   white: STYLES["color"];
   link: STYLES["color"];
   default: STYLES["color"];

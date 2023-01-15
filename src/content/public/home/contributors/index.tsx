@@ -19,7 +19,7 @@ const ContributorsContentContainer = styled(XYCenter)`
 
 export const Contributors: React.FC = () => {
     return (
-        <ContributorsContainerWrapper>
+        <ContributorsContainerWrapper id='contributors'>
             <CustomText variant="h1">Contributors</CustomText>
             <ContributorsContentContainer>
                 {homePageConfig.contributors.map((contributor, index) => (

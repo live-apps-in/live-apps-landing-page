@@ -13,12 +13,13 @@ const TechnologyCardContainer = styled("a")(({theme}) => `
     width: 100%;
     border-radius: 10px;
     transition: all 0.3s ease;
-    // box-shadow: 1px 1px 20px -4px rgba(212,212,212,1);
+    border: 1px solid lightgrey;
+    border-radius: 50px;
     background-color: ${theme.colors.white};
     text-decoration: none;
     &:hover {
         transform: scale(1.1);
-        box-shadow: 1px 1px 31px -4px rgba(222,222,222,0.7);
+        box-shadow: 15px 15px 10px 0px rgba(227,227,227,0.7);
     }
     ${mediaQuery.up("xs")} {
         width: 75%;
@@ -51,7 +52,7 @@ export const TechnologyCard: React.FC<typeof homePageConfig.technologies[0]> = (
         <TechnologyCardImageContainer>
             <img src={props.image} alt={props.name} />
         </TechnologyCardImageContainer>
-        <Divider sx={{ background: theme.colors.success }} />
-        <CustomText variant="caption" align="center">{props.description}</CustomText>
+        <Divider sx={{ background: theme.colors.primary }} />
+        <CustomText variant="caption" color='primary' align="center">{props.description}</CustomText>
     </TechnologyCardContainer>;
 }; 

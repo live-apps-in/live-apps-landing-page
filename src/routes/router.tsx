@@ -8,6 +8,7 @@ export interface ROUTE_DEFINITION extends Omit<RouteProps, "children"> {
 export interface NAVIGATION_LINK {
   name: string;
   path: string;
+  icon?: React.ReactNode;
 }
 
 export type ROUTES_DEFINITION = ROUTE_DEFINITION[];

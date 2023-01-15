@@ -2,11 +2,12 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: 'Work Sans', 'sans-serif';
+  font-family: 'Nunito', 'sans-serif' !important;
   overflow: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

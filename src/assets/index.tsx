@@ -1,6 +1,8 @@
-// import AppLogoFullImage from "src/assets/img/png/app-logo-full.png";
+import AppLogoFullImage from "src/assets/img/png/app-logo-full.png";
 import AISignWaveGif from "src/assets/img/gif/ai-sin-wave-cropped.gif";
+import ReactLogo from "src/assets/img/png/react.png";
+import NodeJSLogo from "src/assets/img/png/node-js.png";
+import MaterialUILogo from "src/assets/img/png/material-ui.png";
+import KittyChanLogo from "src/assets/img/png/kitty-chan.png";
 
-const AppLogoFullImage = "https://cdn.discordapp.com/icons/1017387720902967347/2403bfd7aef0c14c6a1a5c4136c7de7f.webp?size=240";
-
-export { AppLogoFullImage, AISignWaveGif };
+export { AppLogoFullImage, AISignWaveGif, ReactLogo, NodeJSLogo, MaterialUILogo, KittyChanLogo };

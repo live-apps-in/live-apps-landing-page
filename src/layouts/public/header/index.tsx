@@ -1,8 +1,10 @@
-// import { Actions } from "./actions";
+import { Actions } from "./actions";
 import { Logo } from "./logo";
 import { styled } from "@mui/material";
 import { NAVIGATION_LINKS } from "src/routes";
-import { JustifyBetween } from "src/components";
+import { JustifyBetween, YCenter } from "src/components";
+import { Navigation } from "../navigation";
+import { NAVIGATION_DRAWER_PROPS } from "../navigation/drawer";
 
 const StyledHeader = styled(JustifyBetween)`
   padding: 10px 10vw 0;
@@ -15,16 +17,18 @@ export interface HEADER_PROPS {
 }
 
 export const Header: React.FC<
-  HEADER_PROPS & { children?: React.ReactNode }
+  HEADER_PROPS & { children?: React.ReactNode } & NAVIGATION_DRAWER_PROPS
 > = ({
   navigationLinks = [],
   actions = null,
+  isOpen,
+  setIsOpen
 }) => {
   return (
     <StyledHeader>
       <Logo />
-      {/* <Navigation navigationLinks={navigationLinks} />
-      <YCenter>{actions && <Actions>{actions}</Actions>}</YCenter> */}
+      <Navigation navigationLinks={navigationLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
+      <YCenter>{actions && <Actions>{actions}</Actions>}</YCenter>
     </StyledHeader>
   );
 };

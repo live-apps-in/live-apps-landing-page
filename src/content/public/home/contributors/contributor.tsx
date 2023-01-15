@@ -6,6 +6,7 @@ const ContributorContainerWrapper = styled("a")`
     padding: 10px;
     display: grid;
     grid-template-rows: 150px auto;
+    place-items: center;
     gap: 20px;
     text-decoration: none;
     transition: transform 0.3s ease;
@@ -13,7 +14,7 @@ const ContributorContainerWrapper = styled("a")`
         max-width: 150px;
         max-height: 150px
         object-fit: cover;
-        border-radius: 50%;
+        border-radius: 50px;
     }
     &:hover {
         transform: scale(1.1);
@@ -32,7 +33,7 @@ export const Contributor: React.FC<typeof homePageConfig.contributors[0]> = (pro
             <img src={props.image} alt={props.name} />
             <ContributorsContentContainer>
                 <CustomText variant="h3" style={{ fontWeight: "bold" }}>{props.name}</CustomText>
-                <CustomText variant="body2">{props.role}</CustomText>
+                <CustomText variant="body2" color='primary'>{props.role}</CustomText>
             </ContributorsContentContainer>
         </ContributorContainerWrapper>
     );
