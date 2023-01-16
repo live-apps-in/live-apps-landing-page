@@ -36,9 +36,9 @@ export const Intro: React.FC = () => {
     return (
         <IntroContainerWrapper>
             <IntroContentContainerWrapper>
-                <CustomText variant="h1" sx={{ fontWeight: "bolder", fontSize: { xs: 30, sm: 40, md: 60 }, letterSpacing: 4 }} >{homePageConfig.intro.title}</CustomText>
-                <CustomText variant="h4" sx={{ pt: 10 }}>{homePageConfig.intro.slogan}</CustomText>
-                <CustomText sx={{ pt: 2, letterSpacing: 2, color: theme.colors.grey }}>{homePageConfig.intro.description}</CustomText>
+                <CustomText variant="h1" sx={{ fontWeight: 600, fontSize: { xs: 30, sm: 40, md: 60 }, letterSpacing: 2 }} >{homePageConfig.intro.title}</CustomText>
+                <CustomText variant="h4" sx={{ pt: 5 }}>{homePageConfig.intro.slogan}</CustomText>
+                <CustomText sx={{ pt: 2, letterSpacing: 2, color: theme.colors.grey, width: '100%', maxWidth: 800 }}>{homePageConfig.intro.description}</CustomText>
                 <a style={{ textDecoration: 'none' }} href='#projects'>
                     <CustomButton sx={{ mt: 5 }} color='secondary' endIcon={<ArrowRightAltIcon />}>Get Started</CustomButton>
                 </a>
