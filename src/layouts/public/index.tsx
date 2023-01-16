@@ -43,7 +43,7 @@ export const PublicLayout: React.FC<{ children?: React.ReactNode }> = ({
     <a href='#joinus' style={{ textDecoration: 'none' }}>
       <CustomButton size="small" color='secondary'>Join Us</CustomButton>
     </a>
-    <MediaQueryBox up={{ breakpoint: 'sm', style: { display: 'none' } }}>
+    <MediaQueryBox up={{ breakpoint: 'md', style: { display: 'none' } }}>
       <CustomIconButton onClick={() => setIsOpen(prev => !prev)}>
           <MenuIcon />
       </CustomIconButton>

@@ -1,5 +1,4 @@
 import * as CSS from "csstype";
-import { CUSTOM_BUTTON_PROPS } from "src/components";
 import { projectConfig } from "src/config";
 import * as CustomThemes from "./variants";
 

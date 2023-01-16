@@ -2,7 +2,6 @@ import { createTheme, alpha } from "@mui/material";
 import "@mui/lab/themeAugmentation";
 import { mediaQuery } from "../viewport";
 import { CUSTOM_BUTTON_STYLE_BASED_ON_SIZE, STYLES } from '../utils';
-import { PaletteColor } from "@mui/material/styles/createPalette";
 
 // import i18n from 'src/i18n/i18n';
 
@@ -12,7 +11,8 @@ const themeColors = {
   secondary: "#1a1a1a",
   success: "#CCE069",
   warning: "#f6ff7a",
-  error: "#FF1943",
+  // error: "#FF1943",
+  error: "#D32F2F",
   info: "#33C2FF",
   default: "#353535",
   black: "#545454",
@@ -60,9 +60,9 @@ export const PureLightTheme = createTheme({
     success: {
       main: themeColors.success
     },
-    warning: {
-      main: themeColors.warning
-    },
+    // warning: {
+    //   main: themeColors.warning
+    // },
     error: {
       main: themeColors.error
     },

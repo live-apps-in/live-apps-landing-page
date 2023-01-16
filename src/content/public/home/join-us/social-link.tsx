@@ -5,7 +5,7 @@ import { homePageConfig } from "src/config";
 const SocialLinkContainer = styled(FlexColumn)`
     flex: 1;
     img {
-        width: 150px;
+        width: 100px;
         height: auto;
         object-fit: cover;
     }

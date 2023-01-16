@@ -1,4 +1,4 @@
-import { AppLogoFullImage, DiscordLogo, KittyChanLogo, MaterialUILogo, NodeJSLogo, ReactLogo } from "src/assets";
+import { AmazonS3Logo, AppLogoFullImage, AWSDynamoDBLogo, CassandraDBLogo, DiscordLogo, DockerLogo, ExpressJSLogo, FirebaseLogo, GithubActionsLogo, GithubLogo, InversifyJSLogo, JenkinsLogo, KittyChanLogo, MaterialUILogo, MongoDBLogo, NodeJSLogo, NotionLogo, PostmanLogo, RabbitMQLogo, ReactLogo, RedisLogo } from "src/assets";
 
 export const authConfig = {
   authPage: "/auth/login", // exact page where the user will be redirected if not loggedin
@@ -173,28 +173,130 @@ export const homePageConfig = {
   ],
   technologies: [
     {
-      name: 'React JS',
-      link: 'https://reactjs.org/',
-      image: ReactLogo,
-      description: 'A JavaScript library for building user interface'
+      name: 'Frontend',
+      technologies: [
+        {
+          name: 'React JS',
+          link: 'https://reactjs.org/',
+          image: ReactLogo,
+        },
+        {
+          name: 'React Native',
+          link: 'https://reactnative.dev/',
+          image: ReactLogo,
+        },
+        {
+          name: 'Material UI',
+          link: 'https://mui.com/',
+          image: MaterialUILogo,
+          description: 'Move faster with intuitive React UI tools'
+        },
+      ]
     },
     {
-      name: 'Node JS',
-      link: 'https://nodejs.org/',
-      image: NodeJSLogo,
-      description: 'JavaScript runtime environment'
+      name: 'Backend',
+      technologies: [
+        {
+          name: 'Node JS',
+          link: 'https://nodejs.org/',
+          image: NodeJSLogo,
+        },
+        {
+          name: 'Express JS',
+          link: 'https://expressjs.com/',
+          image: ExpressJSLogo,
+        },
+        {
+          name: 'Inversify JS',
+          link: 'https://inversify.io/',
+          image: InversifyJSLogo,
+        },
+        {
+          name: 'RabbitMQ',
+          link: 'https://www.rabbitmq.com/',
+          image: RabbitMQLogo,
+        },
+      ]
     },
     {
-      name: 'React Native',
-      link: 'https://reactnative.dev/',
-      image: ReactLogo,
-      description: 'Native apps for Android and iOS'
+      name: 'Cloud',
+      technologies: [
+        {
+          name: 'Docker',
+          link: 'https://www.docker.com/',
+          image: DockerLogo,
+        },
+        {
+          name: 'Jenkins',
+          link: 'https://www.jenkins.io/',
+          image: JenkinsLogo,
+        },
+        {
+          name: 'GitHub Actions',
+          link: 'https://github.com/features/actions',
+          image: GithubActionsLogo,
+        },
+        {
+          name: 'AWS S3',
+          link: 'https://aws.amazon.com/s3/',
+          image: AmazonS3Logo,
+        },
+        {
+          name: 'FireBase',
+          link: 'https://firebase.google.com/',
+          image: FirebaseLogo,
+        },
+      ]
     },
     {
-      name: 'Material UI',
-      link: 'https://reactnative.dev/',
-      image: MaterialUILogo,
-      description: 'Move faster with intuitive React UI tools'
+      name: 'Database',
+      technologies: [
+        {
+          name: 'MongoDB',
+          link: 'https://www.mongodb.com/',
+          image: MongoDBLogo,
+        },
+        {
+          name: 'DynamoDB',
+          link: 'https://aws.amazon.com/dynamodb/',
+          image: AWSDynamoDBLogo,
+        },
+        {
+          name: 'CassandraDB',
+          link: 'https://cassandra.apache.org/',
+          image: CassandraDBLogo,
+        },
+        {
+          name: 'Redis',
+          link: 'https://redis.io/',
+          image: RedisLogo,
+        },
+      ]
+    },
+    {
+      name: 'Tools & Communication',
+      technologies: [
+        {
+          name: 'Github',
+          link: 'https://github.com/live-apps-in',
+          image: GithubLogo,
+        },
+        {
+          name: 'Discord',
+          link: 'https://discord.com/channels/1017387720902967347/1017387724161945632',
+          image: DiscordLogo,
+        },
+        {
+          name: 'Notion',
+          link: 'https://www.notion.so/Live-Apps-2016f12fc01d481fb29fe7fad545091a',
+          image: NotionLogo,
+        },
+        {
+          name: 'Postman',
+          link: 'https://www.postman.com/',
+          image: PostmanLogo,
+        },
+      ]
     },
   ],
   contributors: [

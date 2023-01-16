@@ -32,7 +32,7 @@ const ProjectCardWrapper = styled("a")(({theme}) => `
         max-width: 25%;
     }
     &:hover {
-        background: linear-gradient(176deg, rgba(37,98,149,1) 0%, rgba(26,133,224,1) 62%, rgba(49,180,204,1) 100%);
+        background-image: radial-gradient( circle 674px at 18.3% 77%,  rgba(139,186,244,1) 3.4%, rgba(15,51,92,1) 56.6% );
         border-radius: 10px;
         transform: scale(1.1);
         > * > *, > * > * > * {

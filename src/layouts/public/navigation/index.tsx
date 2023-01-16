@@ -1,6 +1,5 @@
-import { useState } from 'react';
 import { styled } from "@mui/material";
-import { CustomIconButton, FlexRow, MediaQueryBox } from "src/components";
+import { FlexRow, MediaQueryBox } from "src/components";
 import { NAVIGATION_LINKS } from "src/routes";
 import { NavigationDrawer, NAVIGATION_DRAWER_PROPS } from './drawer';
 import { NavBar } from './navbar';
@@ -14,10 +13,10 @@ export const Navigation: React.FC<{navigationLinks?: NAVIGATION_LINKS} & NAVIGAT
 
     return (
         <NavigationLinksContainer>
-            <MediaQueryBox down={{ breakpoint: 'sm', style: { display: 'none' } }}>
+            <MediaQueryBox down={{ breakpoint: 'md', style: { display: 'none' } }}>
                 <NavBar navigationLinks={navigationLinks} />
             </MediaQueryBox>
-            <MediaQueryBox down={{ breakpoint: 'sm', style: { display: 'none' } }}>
+            <MediaQueryBox down={{ breakpoint: 'md', style: { display: 'none' } }}>
                 <NavigationDrawer navigationLinks={navigationLinks} isOpen={isOpen} setIsOpen={setIsOpen} />
             </MediaQueryBox>
         </NavigationLinksContainer>

@@ -22,7 +22,7 @@ const IntroContentContainerWrapper = styled("div")`
 const IntroContainerWrapper = styled("div")`
     width: 100vw;
     min-height: calc(100vh - ${layoutSettings.header.height});
-    background-image: url("${AISignWaveGif}");
+    // background-image: url("${AISignWaveGif}");
     background-position: right 0 bottom 10%;
     background-size: 100% auto;
     background-repeat: no-repeat;
