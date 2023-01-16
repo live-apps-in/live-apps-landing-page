@@ -21,10 +21,16 @@ export const ProjectCardsContainerWrapper = styled(FlexRow)`
     gap: 20px;
 `;
 
+const ProjectsGradient = styled('span')`
+  background: linear-gradient(90deg, #C2C61E 0%, #496FF5 100%);
+  background-clip: text;
+  text-fill-color: transparent;
+`;
+
 export const Projects: React.FC = () => {
     return (
-        <ProjectsContainerWrapper id='projects'>
-            <CustomText variant="h1">Open Source Projects</CustomText>
+        <ProjectsContainerWrapper id='projects' sx={{ scrollMarginTop: layoutSettings.header.height }}>
+            <CustomText variant="h1">Open Source <ProjectsGradient>Projects</ProjectsGradient></CustomText>
             <ProjectCardsContainerWrapper>
                 {homePageConfig.projects.map((project, index) => (
                     <ProjectCard key={index} {...project} />

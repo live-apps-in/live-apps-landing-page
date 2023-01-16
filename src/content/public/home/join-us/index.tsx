@@ -28,10 +28,16 @@ const JoinUsLinksContainer = styled(XYCenter)`
     gap: 20px;
 `;
 
+const CommunityGradient = styled('span')`
+    background: linear-gradient(90deg, #491EC6 0%, #F7354D 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+`;
+
 export const JoinUS: React.FC = () => {
     return (
-        <JoinUsContainer id='joinus'>
-            <CustomText variant='h1'>Join Our Community</CustomText>
+        <JoinUsContainer id='joinus' sx={{ scrollMarginTop: layoutSettings.header.height }}>
+            <CustomText variant='h1'>Join Our <CommunityGradient>Community</CommunityGradient></CustomText>
             <JoinUsContentContainer>
                 <CustomText align='center' variant='h2' sx={{fontWeight: '300'}}>{homePageConfig.joinUs.description}</CustomText>
                 <Divider sx={{width: '100%'}} />

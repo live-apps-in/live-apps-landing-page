@@ -21,9 +21,15 @@ const TechnologiesContainer = styled(FlexRow)`
     justify-content: center;
 `;
 
+const TechnologiesGradient = styled('span')`
+  background: linear-gradient(90deg, #1EC6BC 0%, #000000 100%);
+  background-clip: text;
+  text-fill-color: transparent;
+`;
+
 export const Technologies: React.FC = () => {
-    return <TechnologiesContainerWrapper id='technologies'>
-        <CustomText variant='h1'>Technologies Used</CustomText>
+    return <TechnologiesContainerWrapper id='technologies' sx={{ scrollMarginTop: layoutSettings.header.height }}>
+        <CustomText variant='h1'><TechnologiesGradient>Technologies</TechnologiesGradient> Used</CustomText>
         <TechnologiesContainer>
             {homePageConfig.technologies.map((technology, index) => (
                 <TechnologyCard {...technology} key={index} />

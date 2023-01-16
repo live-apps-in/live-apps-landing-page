@@ -10,6 +10,7 @@ import { Intro } from "./intro";
 import { JoinUS } from "./join-us";
 import { ProjectDetails } from "./project-details";
 import { Projects } from "./projects";
+import { ScrollToTop } from "./scroll-to-top";
 import { Technologies } from "./technologies";
 
 const StyledHomePageContainer = styled("div")`
@@ -40,6 +41,7 @@ export const HomePageContent = () => {
       <Technologies />
       <Contributors />
       <JoinUS />
+      <ScrollToTop />
     </StyledHomePageContainer>
   );
 };

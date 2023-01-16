@@ -34,7 +34,7 @@ export const Intro: React.FC = () => {
     const theme = useTheme();
 
     return (
-        <IntroContainerWrapper>
+        <IntroContainerWrapper id='intro'>
             <IntroContentContainerWrapper>
                 <CustomText variant="h1" sx={{ fontWeight: 600, fontSize: { xs: 30, sm: 40, md: 60 }, letterSpacing: 1.5 }} >{homePageConfig.intro.title}</CustomText>
                 <CustomText variant="h3" sx={{ pt: 5 }}>{homePageConfig.intro.slogan}</CustomText>

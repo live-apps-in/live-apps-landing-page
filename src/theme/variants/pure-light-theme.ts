@@ -9,7 +9,7 @@ const themeColors = {
   // 017AB1
   primary: "#5569ff",
   secondary: "#1a1a1a",
-  success: "#CCE069",
+  success: "#1dde74",
   warning: "#f6ff7a",
   // error: "#FF1943",
   error: "#D32F2F",

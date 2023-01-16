@@ -6,10 +6,14 @@ import { JustifyBetween, YCenter } from "src/components";
 import { Navigation } from "../navigation";
 import { NAVIGATION_DRAWER_PROPS } from "../navigation/drawer";
 
-const StyledHeader = styled(JustifyBetween)`
+const StyledHeader = styled(JustifyBetween)(({theme}) => `
   padding: 10px 10vw 0;
   align-items: center;
-`;
+  position: sticky;
+  top: 0;
+  background: ${theme.colors.white};
+  z-index: 10;
+`);
 
 export interface HEADER_PROPS {
   navigationLinks?: NAVIGATION_LINKS;

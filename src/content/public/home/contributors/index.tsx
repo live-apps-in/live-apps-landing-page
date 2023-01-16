@@ -17,10 +17,18 @@ const ContributorsContentContainer = styled(XYCenter)`
     gap: 20px;
 `;
 
+const ContributorsGradient = styled('span')`
+    background: linear-gradient(90deg, #3FC61E 0%, #F7354D 100%);
+    background-clip: text;
+    text-fill-color: transparent;
+`;
+
 export const Contributors: React.FC = () => {
     return (
-        <ContributorsContainerWrapper id='contributors'>
-            <CustomText variant="h1">Contributors</CustomText>
+        <ContributorsContainerWrapper id='contributors' sx={{ scrollMarginTop: layoutSettings.header.height }}>
+            <CustomText variant="h1">
+                <ContributorsGradient>Contributors</ContributorsGradient>
+            </CustomText>
             <ContributorsContentContainer>
                 {homePageConfig.contributors.map((contributor, index) => (
                     <Contributor {...contributor} key={index} />

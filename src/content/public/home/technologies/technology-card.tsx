@@ -56,7 +56,7 @@ const TechnologyCardListItemImageContainer = styled(XYCenter)`
 export const TechnologyCard: React.FC<typeof homePageConfig.technologies[0]> = (props) => {
 
     return (<TechnologyCardContainer>
-        <CustomText variant="h2" style={{ textAlign: "center" }}>{props.name}</CustomText>
+        <CustomText variant="h2" style={{ textAlign: "center", fontWeight: 300 }}>{props.name}</CustomText>
         <TechnologyCardListItemsContainer>
             {
                 props.technologies.map((technology, index) => 

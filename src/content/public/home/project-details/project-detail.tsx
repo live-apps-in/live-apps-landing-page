@@ -1,7 +1,9 @@
 import Warning from "@mui/icons-material/Warning";
 import { Divider, styled, Chip, Tooltip } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import { CustomText, FlexColumn, FlexRow, JustifyBetween } from "src/components";
 import { homePageConfig } from "src/config";
+import { layoutSettings } from "src/layouts/public/layout-settings";
 import { mediaQuery } from "src/theme";
 
 const ProjectDetailContainer = styled(FlexColumn)`
@@ -61,17 +63,30 @@ const ProjectDetailFeatureDescriptionContainer = styled("li")`
 `;
 
 export const ProjectDetail: React.FC<typeof homePageConfig.projects[0]> = (props) => {
+
+    const theme = useTheme();
+
     return (
         <>
-            <ProjectDetailContainer id={props.id}>
+            <ProjectDetailContainer id={props.id} sx={{ scrollMarginTop: layoutSettings.header.height }}>
                 <ProjectDetailTitleContainer>
                     <ProjectDetailTitleSection>
-                        <CustomText variant="h3" style={{ fontWeight: "bold" }}>{props.name} {
-                            props.isBeta && (
-                                <Tooltip title='Under Development'>
-                                    <Chip label='Beta' color='error' />
-                                </Tooltip>
-                            )}</CustomText>
+                        <CustomText variant="h3" style={{ fontWeight: "bold" }}>{props.name} 
+                            {
+                                props.isBeta && (
+                                    <Tooltip title='Under Development'>
+                                        <Chip label='Development' color='error' sx={{ ml: 1 }} />
+                                    </Tooltip>
+                                )
+                            } 
+                            {
+                                props.isLive && (
+                                    <Tooltip title='This is live in our Discord server'>
+                                        <Chip label='Live' color='success' sx={{ ml: 1, color: theme.colors.white }} />
+                                    </Tooltip>
+                                )
+                            }
+                        </CustomText>
                         <img src={props.image} alt={props.name} />
                     </ProjectDetailTitleSection>
                     <ProjectDetailTitleDescription>
@@ -92,7 +107,7 @@ export const ProjectDetail: React.FC<typeof homePageConfig.projects[0]> = (props
                                 {
                                     feature.isBeta &&
                                         <Tooltip title='Under Development'>
-                                            <Chip label='Beta' color='error' />
+                                            <Chip label='Development' color='error' />
                                         </Tooltip>
                                 }
                             </ProjectDetailFeatureTitleContainer>

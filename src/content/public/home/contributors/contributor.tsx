@@ -32,8 +32,8 @@ export const Contributor: React.FC<typeof homePageConfig.contributors[0]> = (pro
         <ContributorContainerWrapper href={props.link} target='_blank'>
             <img src={props.image} alt={props.name} />
             <ContributorsContentContainer>
-                <CustomText variant="h3" style={{ fontWeight: "bold" }}>{props.name}</CustomText>
-                <CustomText variant="body2" color='primary'>{props.role}</CustomText>
+                <CustomText variant="h3" style={{ fontWeight: 300 }}>{props.name}</CustomText>
+                <CustomText variant="body2" style={{ fontWeight: "bold" }} color='primary'>{props.role}</CustomText>
             </ContributorsContentContainer>
         </ContributorContainerWrapper>
     );

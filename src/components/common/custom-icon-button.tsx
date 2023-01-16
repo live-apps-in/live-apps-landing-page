@@ -19,7 +19,7 @@ export interface CUSTOM_ICON_BUTTON_PROPS extends Omit<IconButtonProps, "href"> 
 
 export const CustomIconButton: React.FC<CUSTOM_ICON_BUTTON_PROPS> = (props) => {
   const navigate = useNavigate();
-  const { loading, href, color = 'primary', ...rest } = props;
+  const { loading, href, ...rest } = props;
 
   const goto = (route: CUSTOM_ICON_BUTTON_PROPS["href"]) => {
     if (route) {

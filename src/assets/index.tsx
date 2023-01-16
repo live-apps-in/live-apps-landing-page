@@ -13,16 +13,22 @@ import FirebaseLogo from "src/assets/img/svg-code/firebase.svg";
 import GithubActionsLogo from "src/assets/img/svg-code/github-actions.svg";
 import GithubLogo from "src/assets/img/svg-code/github.svg";
 import GoogleAssistantLogo from "src/assets/img/svg-code/google-assistant.svg";
+import GraphQLLogo from "src/assets/img/svg-code/graphql.svg";
 import InversifyJSLogo from "src/assets/img/svg-code/inversify-js.svg";
 import JenkinsLogo from "src/assets/img/svg-code/jenkins.svg";
 import MaterialUILogo from "src/assets/img/svg-code/material-ui.svg";
 import MongoDBLogo from "src/assets/img/svg-code/mongodb.svg";
+import NestJSLogo from "src/assets/img/svg-code/nest-js.svg";
+import NextJSLogo from "src/assets/img/svg-code/next-js.svg";
+import NginxLogo from "src/assets/img/svg-code/nginx.svg";
 import NodeJSLogo from "src/assets/img/svg-code/node-js.svg";
 import NotionLogo from "src/assets/img/svg-code/notion.svg";
 import PostmanLogo from "src/assets/img/svg-code/postman.svg";
 import RabbitMQLogo from "src/assets/img/svg-code/rabbitmq.svg";
 import ReactLogo from "src/assets/img/svg-code/react.svg";
 import RedisLogo from "src/assets/img/svg-code/redis.svg";
+import ReduxLogo from "src/assets/img/svg-code/redux.svg";
+import StyledComponentsLogo from "src/assets/img/svg-code/styled-components.svg";
 import ValorantLogo from "src/assets/img/svg-code/valorant.svg";
 
 export {
@@ -41,15 +47,21 @@ export {
     GithubActionsLogo,
     GithubLogo,
     GoogleAssistantLogo,
+    GraphQLLogo,
     InversifyJSLogo,
     JenkinsLogo,
     MaterialUILogo,
     MongoDBLogo,
+    NestJSLogo,
+    NextJSLogo,
+    NginxLogo,
     NodeJSLogo,
     NotionLogo,
     PostmanLogo,
     RabbitMQLogo,
     ReactLogo,
     RedisLogo,
+    ReduxLogo,
+    StyledComponentsLogo,
     ValorantLogo,
 };

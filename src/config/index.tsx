@@ -1,12 +1,12 @@
 import { styled } from "@mui/material/styles";
-import { AmazonS3Logo, AppLogoFullImage, AWSDynamoDBLogo, CassandraDBLogo, DiscordLogo, DockerLogo, ExpressJSLogo, FirebaseLogo, GithubActionsLogo, GithubLogo, InversifyJSLogo, JenkinsLogo, KittyChanLogo, MaterialUILogo, MongoDBLogo, NodeJSLogo, NotionLogo, PostmanLogo, RabbitMQLogo, ReactLogo, RedisLogo } from "src/assets";
+import { AmazonS3Logo, AppLogoFullImage, AWSDynamoDBLogo, CassandraDBLogo, DiscordLogo, DockerLogo, ExpoLogo, ExpressJSLogo, FirebaseLogo, GithubActionsLogo, GithubLogo, GraphQLLogo, InversifyJSLogo, JenkinsLogo, KittyChanLogo, MaterialUILogo, MongoDBLogo, NestJSLogo, NextJSLogo, NginxLogo, NodeJSLogo, NotionLogo, PostmanLogo, RabbitMQLogo, ReactLogo, RedisLogo, ReduxLogo, StyledComponentsLogo } from "src/assets";
 
 // custom designs
 // https://cssgradient.io/blog/css-gradient-text/ -- reference
 const IntroGradient = styled('span')`
   background: linear-gradient(90deg, #4AC7FA 0%, #E649F5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
   font-weight: bold;
 `;
 
@@ -49,8 +49,9 @@ export const homePageConfig = {
       link: 'https://jagalive.co', 
       image: KittyChanLogo,
       id: 'kittychan',
-      description: <>Serving <b>300+ Users in 6 Discord Servers</b>. Kitty chan is a <b>Discord Bot</b>, powerful enough to moderate server</>,
+      description: <>Serving <b style={{ fontSize: 17 }}>300+</b> users in <b style={{ fontSize: 17 }}>6</b> Discord servers. Kitty chan is a <b>Discord bot</b>, powerful enough to moderate server</>,
       isBeta: false,
+      isLive: true,
       features: [
         {
           name: 'Language Control',
@@ -191,6 +192,16 @@ export const homePageConfig = {
           image: ReactLogo,
         },
         {
+          name: 'Next JS',
+          link: 'https://nextjs.org/',
+          image: NextJSLogo,
+        },
+        {
+          name: 'Expo',
+          link: 'https://expo.dev/',
+          image: ExpoLogo,
+        },
+        {
           name: 'React Native',
           link: 'https://reactnative.dev/',
           image: ReactLogo,
@@ -199,7 +210,16 @@ export const homePageConfig = {
           name: 'Material UI',
           link: 'https://mui.com/',
           image: MaterialUILogo,
-          description: 'Move faster with intuitive React UI tools'
+        },
+        {
+          name: 'Redux',
+          link: 'https://redux.js.org/',
+          image: ReduxLogo,
+        },
+        {
+          name: 'Styled Components',
+          link: 'https://styled-components.com/',
+          image: StyledComponentsLogo,
         },
       ]
     },
@@ -215,6 +235,16 @@ export const homePageConfig = {
           name: 'Express JS',
           link: 'https://expressjs.com/',
           image: ExpressJSLogo,
+        },
+        {
+          name: 'Nest JS',
+          link: 'https://nestjs.com/',
+          image: NestJSLogo,
+        },
+        {
+          name: 'GraphQL',
+          link: 'https://graphql.org/',
+          image: GraphQLLogo,
         },
         {
           name: 'Inversify JS',
@@ -240,6 +270,11 @@ export const homePageConfig = {
           name: 'Jenkins',
           link: 'https://www.jenkins.io/',
           image: JenkinsLogo,
+        },
+        {
+          name: 'Nginx',
+          link: 'https://www.nginx.com/',
+          image: NginxLogo,
         },
         {
           name: 'GitHub Actions',
@@ -313,19 +348,19 @@ export const homePageConfig = {
     { 
       name: 'Dikshit', 
       image: 'https://media.licdn.com/dms/image/D5603AQEgdtp1FdEptQ/profile-displayphoto-shrink_800_800/0/1670564217455?e=1678924800&v=beta&t=mT0ulR2HUys4wX8kR_OkXqx4Oze86vUHleLoTpJp-Dc', 
-      role: 'Senior Front-end Developer', 
+      role: 'Front-end Developer', 
       link: 'https://portfolio.dikshit.live' 
     },
     { 
       name: 'Jaga', 
       image: 'https://media.licdn.com/dms/image/C4D03AQE36ew5sx7HmQ/profile-displayphoto-shrink_800_800/0/1656441989564?e=1678924800&v=beta&t=kFq77FkWMx7inw5MZpfY2wTwQLLSQbEE8LafXx48UMA', 
-      role: 'Senior Back-end Developer', 
+      role: 'Back-end Developer', 
       link: 'https://portfolio.dikshit.live' 
     },
     { 
       name: 'Inderajith', 
       image: 'https://media.licdn.com/dms/image/C5103AQHK3EqoFyO_2A/profile-displayphoto-shrink_800_800/0/1580924156215?e=1678924800&v=beta&t=sDpZaqptgFpjv60-Z39rGHksBilmAAYVbApzZNJfjCg', 
-      role: 'Senior Mobile App Developer', 
+      role: 'Mobile App Developer', 
       link: 'https://portfolio.dikshit.live' 
     }
   ],

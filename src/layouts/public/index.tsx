@@ -14,10 +14,13 @@ import { useState } from "react";
 const MainContentWrapper = styled("div")`
   width: 100vw;
   max-width: 100vw;
-  overflow: auto;
-  overflow-x: hidden;
-  height: calc(100vh - ${layoutSettings.header.height});
-  max-height: 100vh;
+  min-height: calc(100vh - ${layoutSettings.header.height});
+  overflow: hidden;
+  // -----------
+  // min-height: calc(100vh - ${layoutSettings.header.height});
+  // overflow: auto;
+  // overflow-x: hidden;
+  // max-height: 100vh;
 `;
 
 export const PublicLayout: React.FC<{ children?: React.ReactNode }> = ({
@@ -41,7 +44,7 @@ export const PublicLayout: React.FC<{ children?: React.ReactNode }> = ({
   const actions = (
   <FlexRow style={{ gap: 5, alignItems: 'center' }}>
     <a href='#joinus' style={{ textDecoration: 'none' }}>
-      <CustomButton size="small" color='secondary'>Join Us</CustomButton>
+      <CustomButton size="small" color='secondary' style={{ fontWeight: 300 }} sx={{ pt: 1 }}>Join Us</CustomButton>
     </a>
     <MediaQueryBox up={{ breakpoint: 'md', style: { display: 'none' } }}>
       <CustomIconButton onClick={() => setIsOpen(prev => !prev)}>
@@ -61,6 +64,7 @@ export const PublicLayout: React.FC<{ children?: React.ReactNode }> = ({
     <>
       <Header navigationLinks={navigationLinks.publicLayout} actions={actions} isOpen={isOpen} setIsOpen={setIsOpen} />
       <MainContentWrapper>{children}</MainContentWrapper>
+      <div className="bg" />
     </>
   );
 };
