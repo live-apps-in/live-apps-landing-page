@@ -7,6 +7,7 @@ const IntroGradient = styled('span')`
   background: linear-gradient(90deg, #4AC7FA 0%, #E649F5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
 `;
 
 export const authConfig = {
@@ -39,7 +40,7 @@ export const homePageConfig = {
   pingHomepage: 'https://jagalive.co',
   intro: {
     title: <>Welcome to <IntroGradient>Live Apps</IntroGradient></>,
-    slogan: <>Developing something <b style={{ fontSize: 25 }}>Bigger</b></>,
+    slogan: <>Developing something <b style={{ fontSize: 30 }}>Bigger</b></>,
     description: 'We are building projects to learn and help others learn. Join our team of passionate contributors and make a difference in the open-source community. Help us build the future of web development'
   },
   projects: [

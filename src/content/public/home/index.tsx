@@ -36,8 +36,8 @@ export const HomePageContent = () => {
     <StyledHomePageContainer>
       <Intro />
       <Projects />
-      <Technologies />
       <ProjectDetails />
+      <Technologies />
       <Contributors />
       <JoinUS />
     </StyledHomePageContainer>
