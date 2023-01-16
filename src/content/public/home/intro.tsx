@@ -32,7 +32,7 @@ export const Intro: React.FC = () => {
     return (
         <IntroContainerWrapper>
             <IntroContentContainerWrapper>
-                <CustomText variant="h1" sx={{ fontWeight: "bold", fontSize: { sm: 50 } }} >{homePageConfig.intro.title}</CustomText>
+                <CustomText variant="h1" sx={{ fontWeight: "bolder", fontSize: { sm: 50 } }} >{homePageConfig.intro.title}</CustomText>
                 <CustomText variant="caption" color='primary' sx={{ letterSpacing: 7, fontSize: { xs: 10, sm: 13 } }}>{homePageConfig.intro.slogan}</CustomText>
                 <CustomText sx={{ pt: 10, letterSpacing: 2 }} >{homePageConfig.intro.description}</CustomText>
             </IntroContentContainerWrapper>

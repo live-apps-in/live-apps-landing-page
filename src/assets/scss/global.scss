@@ -14,6 +14,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: rgb(255,255,255);
+  background: linear-gradient(139deg, rgba(255,255,255,1) 0%, rgba(214,201,251,1) 35%, rgba(255,255,255,1) 75%, rgba(233,194,125,1) 100%, rgba(254,252,253,1) 100%)
 }
 
 code {

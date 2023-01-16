@@ -8,6 +8,7 @@ const StyledLogoWrapper = styled(Link)`
   img {
     width: auto;
     height: 54px;
+    border-radius: 50%;
   }
   // ${mediaQuery.up("sm")} {
   //   img {
