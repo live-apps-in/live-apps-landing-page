@@ -1,4 +1,4 @@
-import { AppLogoFullImage, KittyChanLogo, MaterialUILogo, NodeJSLogo, ReactLogo } from "src/assets";
+import { AppLogoFullImage, DiscordLogo, KittyChanLogo, MaterialUILogo, NodeJSLogo, ReactLogo } from "src/assets";
 
 export const authConfig = {
   authPage: "/auth/login", // exact page where the user will be redirected if not loggedin
@@ -216,5 +216,15 @@ export const homePageConfig = {
       role: 'Senior Mobile App Developer', 
       link: 'https://portfolio.dikshit.live' 
     }
-  ]
+  ],
+  joinUs: {
+    description: 'We are actively looking for contributors for AI/ML, UI/UX domains',
+    links: [
+      {
+        name: 'Discord',
+        link: 'https://discord.gg/4uz7vtzc',
+        image: DiscordLogo
+      }
+    ]
+  }
 };

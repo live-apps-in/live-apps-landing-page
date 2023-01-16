@@ -3,7 +3,7 @@ import { Header } from "./header";
 import { styled } from "@mui/material";
 // import { CustomButton } from "src/components";
 import { layoutSettings } from "./layout-settings";
-import { CustomIconButton, MediaQueryBox } from "src/components";
+import { CustomButton, CustomIconButton, FlexRow, MediaQueryBox } from "src/components";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
 // import { useAuth } from "src/hooks";
@@ -39,11 +39,16 @@ export const PublicLayout: React.FC<{ children?: React.ReactNode }> = ({
   // };
 
   const actions = (
-  <MediaQueryBox up={{ breakpoint: 'sm', style: { display: 'none' } }}>
-    <CustomIconButton onClick={() => setIsOpen(prev => !prev)}>
-        <MenuIcon />
-    </CustomIconButton>
-  </MediaQueryBox>
+  <FlexRow style={{ gap: 5, alignItems: 'center' }}>
+    <a href='#joinus' style={{ textDecoration: 'none' }}>
+      <CustomButton size="small" color='secondary'>Join Us</CustomButton>
+    </a>
+    <MediaQueryBox up={{ breakpoint: 'sm', style: { display: 'none' } }}>
+      <CustomIconButton onClick={() => setIsOpen(prev => !prev)}>
+          <MenuIcon />
+      </CustomIconButton>
+    </MediaQueryBox>
+  </FlexRow>
 );
     // display only if its not the signup page
     // !isActiveRoute({ path: pathname, route: authConfig.signupPage }) && (

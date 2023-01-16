@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { useTheme } from '@mui/material';
 import { CustomButton } from "src/components";
 import { NAVIGATION_LINKS } from "src/routes";
@@ -11,21 +10,14 @@ export const NavBar: React.FC<{navigationLinks?: NAVIGATION_LINKS}> = ({ navigat
     return (
         <>
         {navigationLinks.map((navigationLinkItem, index) => (
-            <Link to={navigationLinkItem.path} key={index} style={{ textDecoration: 'none' }}>
+            <a href={navigationLinkItem.path} key={index} style={{ textDecoration: 'none' }}>
                 <CustomButton
-                    variant='outlined' 
-                    href={navigationLinkItem.path}
-                    sx={{ 
-                        color: theme.colors.pureBlack, 
-                        border: 'none',
-                        ":hover": {
-                            border: 'none'
-                        } 
-                    }}
+                    variant='text' 
+                    sx={{ color: theme.colors.pureBlack }}
                 >
                     {navigationLinkItem.name}
                 </CustomButton>
-            </Link>
+            </a>
         ))}
       </>
     );

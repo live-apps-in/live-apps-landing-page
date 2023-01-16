@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d12d787f.css",
-    "main.js": "/static/js/main.f63b480d.js",
+    "main.js": "/static/js/main.8c89498e.js",
     "static/js/787.a633a771.chunk.js": "/static/js/787.a633a771.chunk.js",
     "static/media/ai-sin-wave-cropped.gif": "/static/media/ai-sin-wave-cropped.e11a5ed2647fea20ca0b.gif",
     "static/media/Nunito-LightItalic.ttf": "/static/media/Nunito-LightItalic.ca6674927a6bf05c3bf7.ttf",
@@ -20,13 +20,14 @@
     "static/media/Nunito-Black.ttf": "/static/media/Nunito-Black.969e95ce4a719e43f654.ttf",
     "static/media/Nunito-ExtraLight.ttf": "/static/media/Nunito-ExtraLight.52e1b77fe0519dcdcc7f.ttf",
     "static/media/kitty-chan.png": "/static/media/kitty-chan.a43955d18e2c1d9389d3.png",
+    "static/media/discord.svg": "/static/media/discord.5292ba3f0837e105144b827bf386503f.svg",
     "index.html": "/index.html",
     "main.d12d787f.css.map": "/static/css/main.d12d787f.css.map",
-    "main.f63b480d.js.map": "/static/js/main.f63b480d.js.map",
+    "main.8c89498e.js.map": "/static/js/main.8c89498e.js.map",
     "787.a633a771.chunk.js.map": "/static/js/787.a633a771.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d12d787f.css",
-    "static/js/main.f63b480d.js"
+    "static/js/main.8c89498e.js"
   ]
 }

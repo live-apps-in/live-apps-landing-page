@@ -7,6 +7,7 @@
 import { styled } from "@mui/material";
 import { Contributors } from "./contributors";
 import { Intro } from "./intro";
+import { JoinUS } from "./join-us";
 import { ProjectDetails } from "./project-details";
 import { Projects } from "./projects";
 import { Technologies } from "./technologies";
@@ -38,6 +39,7 @@ export const HomePageContent = () => {
       <Technologies />
       <ProjectDetails />
       <Contributors />
+      <JoinUS />
     </StyledHomePageContainer>
   );
 };

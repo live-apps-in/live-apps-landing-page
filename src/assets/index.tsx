@@ -4,5 +4,6 @@ import ReactLogo from "src/assets/img/png/react.png";
 import NodeJSLogo from "src/assets/img/png/node-js.png";
 import MaterialUILogo from "src/assets/img/png/material-ui.png";
 import KittyChanLogo from "src/assets/img/png/kitty-chan.png";
+import DiscordLogo from "src/assets/img/svg-code/discord.svg";
 
-export { AppLogoFullImage, AISignWaveGif, ReactLogo, NodeJSLogo, MaterialUILogo, KittyChanLogo };
+export { AppLogoFullImage, AISignWaveGif, ReactLogo, NodeJSLogo, MaterialUILogo, KittyChanLogo, DiscordLogo };

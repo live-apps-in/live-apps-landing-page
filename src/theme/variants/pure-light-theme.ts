@@ -1,14 +1,15 @@
 import { createTheme, alpha } from "@mui/material";
 import "@mui/lab/themeAugmentation";
 import { mediaQuery } from "../viewport";
-import { STYLES } from '../utils';
+import { CUSTOM_BUTTON_STYLE_BASED_ON_SIZE, STYLES } from '../utils';
+import { PaletteColor } from "@mui/material/styles/createPalette";
 
 // import i18n from 'src/i18n/i18n';
 
 const themeColors = {
   // 017AB1
   primary: "#5569ff",
-  secondary: "#6E759F",
+  secondary: "#1a1a1a",
   success: "#CCE069",
   warning: "#f6ff7a",
   error: "#FF1943",
@@ -24,7 +25,51 @@ export const commonTypographyStyles: STYLES = {
   fontFamily: "'Nunito', sans-serif",
 };
 
+export const commonButtonStyles: STYLES = {
+  ...commonTypographyStyles,
+  fontWeight: 600,
+};
+
+export const customButtonStyleBasedOnSize: CUSTOM_BUTTON_STYLE_BASED_ON_SIZE = {
+  small: {
+    padding: "5px 9px",
+    margin: "5px",
+  },
+  medium: {
+    padding: "7px 15px",
+    margin: "5px",
+  },
+  large: {
+    padding: "12px 17px",
+    margin: "5px",
+  },
+  noSize: {
+    padding: 0,
+    margin: 0,
+  },
+};
+
 export const PureLightTheme = createTheme({
+  palette: {
+    primary: {
+      main: themeColors.primary
+    },
+    secondary: {
+      main: themeColors.secondary
+    },
+    success: {
+      main: themeColors.success
+    },
+    warning: {
+      main: themeColors.warning
+    },
+    error: {
+      main: themeColors.error
+    },
+    info: {
+      main: themeColors.info
+    },
+  },
   colors: themeColors,
   general: {
     bodyBg: "#FFFFFF",
@@ -156,10 +201,6 @@ export const PureLightTheme = createTheme({
       textTransform: "uppercase",
       color: alpha(themeColors.black, 0.5),
     },
-    button: {
-      ...commonTypographyStyles,
-      fontWeight: 600,
-    },
     overline: {
       ...commonTypographyStyles,
       fontSize: 13,
@@ -169,5 +210,26 @@ export const PureLightTheme = createTheme({
 
     // other components
     Card: {},
+
+    // Button
+    button: {
+      text: {
+        ...commonButtonStyles,
+
+      },
+      outlined: {
+        ...commonButtonStyles,
+
+      },
+      contained: {
+        ...commonButtonStyles,
+        
+      },
+      link: {
+        ...commonButtonStyles,
+
+      },
+      ...customButtonStyleBasedOnSize
+    },
   },
 });

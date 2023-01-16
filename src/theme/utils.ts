@@ -1,4 +1,5 @@
 import * as CSS from "csstype";
+import { CUSTOM_BUTTON_PROPS } from "src/components";
 import { projectConfig } from "src/config";
 import * as CustomThemes from "./variants";
 
@@ -54,6 +55,27 @@ export type THEME_COLORS = {
   default: STYLES["color"];
 };
 
+enum CUSTOM_BUTTON_VARIANT_KEYS {
+  text = 'text',
+  outlined = 'outlined',
+  contained = 'contained',
+  link = 'link',
+}
+
+enum CUSTOM_BUTTON_SIZE_KEYS {
+  small = 'small',
+  medium = 'medium',
+  large = 'large',
+  noSize = 'noSize',
+}
+
+type CUSTOM_BUTTON_STYLE_KEYS  = CUSTOM_BUTTON_VARIANT_KEYS & CUSTOM_BUTTON_SIZE_KEYS;
+
+export type CUSTOM_BUTTON_STYLE_BASED_ON_SIZE = Record<
+  CUSTOM_BUTTON_SIZE_KEYS,
+  STYLES
+>; // https://bobbyhadz.com/blog/typescript-index-signature-parameter-cannot-be-union-type -- reference
+
 declare module "@mui/material/styles" {
   interface Theme {
     colors: THEME_COLORS;
@@ -82,6 +104,16 @@ declare module "@mui/material/styles" {
       span: STYLES;
       link: STYLES;
       label: STYLES;
+      subtitle1: STYLES;
+      subtitle2: STYLES;
+      body1: STYLES;
+      body2: STYLES;
+      caption: STYLES;
+      overline: STYLES;
+      Card: STYLES;
+      button: {
+        [key in CUSTOM_BUTTON_STYLE_KEYS]: STYLES;
+      };
       [ComponentName: string]: STYLES;
     };
   }
@@ -118,9 +150,11 @@ declare module "@mui/material/styles" {
       body1: STYLES;
       body2: STYLES;
       caption: STYLES;
-      button: STYLES;
       overline: STYLES;
       Card: STYLES;
+      button: {
+        [key in CUSTOM_BUTTON_STYLE_KEYS]: STYLES;
+      };
       [ComponentName: string]: STYLES;
     };
   }

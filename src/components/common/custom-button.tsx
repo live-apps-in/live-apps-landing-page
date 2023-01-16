@@ -3,6 +3,25 @@ import Button, { ButtonProps } from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import { useNavigate, To } from "react-router-dom";
 
+// apply style objects for the component
+// reference - https://styled-components.com/docs/advanced#style-objects
+
+const getButtonStyle = (variant, size = "medium", theme) => ({
+  ...theme.componentCustomStyles.button[variant],
+  ...{
+    ...theme.componentCustomStyles.button[
+      size === null ? "noSize" : size
+    ],
+  },
+});
+
+const StyledButton = styled(Button)(({theme, ...props}) => {
+  const buttonStyle = getButtonStyle(props.variant, props.size, theme);
+  return { ...buttonStyle };
+});
+
+const StyledLinkButton = styled(Button)(({ theme }) => ({ ...theme.componentCustomStyles.button['link'] }));
+
 // custom-button props
 export interface NavigateOptions {
   replace?: boolean;
@@ -20,19 +39,6 @@ export interface CUSTOM_BUTTON_PROPS extends Omit<ButtonProps, "href"> {
   linkStyle?: boolean;
 }
 
-const LinkStyledButton = styled(Button)(
-  ({ theme }) => `
-  padding: 0;
-  color: ${theme.colors.primary};
-  text-align: left;
-  font-weight: normal;
-  :hover {
-    text-decoration: underline;
-    background: none;
-  }
-`
-);
-
 export const CustomButton: React.FC<CUSTOM_BUTTON_PROPS> = (props) => {
   const navigate = useNavigate();
   const { loading, href, linkStyle, ...rest } = props;
@@ -45,7 +51,7 @@ export const CustomButton: React.FC<CUSTOM_BUTTON_PROPS> = (props) => {
     }
   };
 
-  const ButtonComponent = linkStyle ? LinkStyledButton : Button;
+  const ButtonComponent = linkStyle ? StyledLinkButton : StyledButton;
 
   return (
     <ButtonComponent
