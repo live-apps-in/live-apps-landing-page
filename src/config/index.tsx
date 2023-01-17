@@ -379,7 +379,7 @@ export const homePageConfig = {
     links: [
       {
         name: 'Discord',
-        link: 'https://discord.gg/4uz7vtzc',
+        link: 'https://discord.com/invite/6FcsJBYaaE',
         image: DiscordLogo
       }
     ]
