@@ -75,7 +75,7 @@ export const ProjectDetail: React.FC<typeof homePageConfig.projects[0]> = (props
                             {
                                 props.isBeta && (
                                     <Tooltip title='Under Development'>
-                                        <Chip label='Development' color='error' sx={{ ml: 1 }} />
+                                        <Chip label='Development' color='secondary' sx={{ ml: 1 }} />
                                     </Tooltip>
                                 )
                             } 

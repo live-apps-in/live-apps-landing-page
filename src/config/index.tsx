@@ -46,10 +46,10 @@ export const homePageConfig = {
   projects: [
     { 
       name: 'kitty chan', 
-      link: 'https://jagalive.co', 
+      link: 'https://kittychan.jagalive.in', 
       image: KittyChanLogo,
       id: 'kittychan',
-      description: <>Serving <b style={{ fontSize: 17 }}>300+</b> users in <b style={{ fontSize: 17 }}>6</b> Discord servers. Kitty chan is a <b>Discord bot</b>, powerful enough to moderate server</>,
+      description: <>Serving <b style={{ fontSize: 20 }}>300+</b> users in <b style={{ fontSize: 20 }}>6</b> Discord servers. Kitty chan is a <b>Discord bot</b>, powerful enough to moderate your Discord server</>,
       isBeta: false,
       isLive: true,
       features: [
@@ -68,7 +68,7 @@ export const homePageConfig = {
           isLimitation: false,
           descriptions: [
             <>Enable messages <b>across different servers.</b></>,
-            <>Filter potential <b>spam messages</b> and mentions.</>,
+            <>Filter potential <b>spam messages, links</b> and mentions.</>,
           ]
         },
         {
@@ -77,7 +77,7 @@ export const homePageConfig = {
           isLimitation: false,
           descriptions: [
             <>Detect players if someone wants to <b>play VALORANT.</b></>,
-            <><b>Find players</b> based on their rank.</>,
+            <><b>Players Matchmaking</b> based on their rank.</>,
           ]
         },
         {
@@ -93,18 +93,19 @@ export const homePageConfig = {
     },
     {
       name: 'Ping',
-      link: 'https://jagalive.co', 
+      link: 'https://jagalive.in', 
       image: AppLogoFullImage,
       id: 'ping',
       description: 'A chat application inspired from Discord',
       isBeta: true,
       features: [
         {
-          name: 'Profile',
+          name: 'Customization',
           isBeta: false,
           isLimitation: false,
           descriptions: [
             <>Free <b>Animated profile</b> banners and pictures.</>,
+            <><b>Animated server/community profile</b> picture and background.</>,
           ]
         },
         {
@@ -115,13 +116,22 @@ export const homePageConfig = {
             <>Source Quality <b>Audio & Video Streaming.</b></>,
             'Larger File upload.',
           ]
-        }
+        },
+        {
+          name: 'Limitation',
+          isBeta: false,
+          isLimitation: true,
+          descriptions: [
+            <>Closed Beta will be available only for few discord users.</>,
+            'Does not support iOS Devices',
+          ]
+        },
       ]
     },
     { 
       name: 'LiveCord', 
-      link: 'https://jagalive.co', 
-      image: AppLogoFullImage,
+      link: 'https://jagalive.in', 
+      image: DiscordLogo,
       id: 'livecord',
       description: <><b>Replace default Discord Bot Moderation</b> from within Discord to a Web Page</>,
       isBeta: true,
@@ -156,8 +166,8 @@ export const homePageConfig = {
     },
     { 
       name: 'AirNotion', 
-      link: 'https://jagalive.co', 
-      image: AppLogoFullImage,
+      link: 'https://jagalive.in', 
+      image: NotionLogo,
       id: 'airnotion',
       description: <>Use Amazon Alexa or Google Assistant to <b>Modify your Notion database</b></>,
       isBeta: true,
@@ -348,24 +358,24 @@ export const homePageConfig = {
     { 
       name: 'Dikshit', 
       image: 'https://media.licdn.com/dms/image/D5603AQEgdtp1FdEptQ/profile-displayphoto-shrink_800_800/0/1670564217455?e=1678924800&v=beta&t=mT0ulR2HUys4wX8kR_OkXqx4Oze86vUHleLoTpJp-Dc', 
-      role: 'Front-end Developer', 
+      role: 'Frontend Web', 
       link: 'https://portfolio.dikshit.live' 
     },
     { 
       name: 'Jaga', 
       image: 'https://media.licdn.com/dms/image/C4D03AQE36ew5sx7HmQ/profile-displayphoto-shrink_800_800/0/1656441989564?e=1678924800&v=beta&t=kFq77FkWMx7inw5MZpfY2wTwQLLSQbEE8LafXx48UMA', 
-      role: 'Back-end Developer', 
-      link: 'https://portfolio.dikshit.live' 
+      role: 'Backend & DevOps', 
+      link: 'https://www.linkedin.com/in/jagadheesh-m-77927817b/' 
     },
     { 
       name: 'Inderajith', 
       image: 'https://media.licdn.com/dms/image/C5103AQHK3EqoFyO_2A/profile-displayphoto-shrink_800_800/0/1580924156215?e=1678924800&v=beta&t=sDpZaqptgFpjv60-Z39rGHksBilmAAYVbApzZNJfjCg', 
-      role: 'Mobile App Developer', 
+      role: 'Mobile App & UI/UX', 
       link: 'https://portfolio.dikshit.live' 
     }
   ],
   joinUs: {
-    description: <>We are actively looking for contributors for <b>AI/ML, UI/UX</b> domains.</>,
+    description: <>We are actively looking for contributors in <b>AI/ML, UI/UX</b> domains.</>,
     links: [
       {
         name: 'Discord',

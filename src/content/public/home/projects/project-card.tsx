@@ -73,7 +73,7 @@ export const ProjectCard: React.FC<typeof homePageConfig.projects[0]> = (props) 
                     {
                         props.isBeta && 
                         (<Tooltip title='Under Development'>
-                            <Chip sx={{ ml: 1 }} label='Beta' color='error' />
+                            <Chip sx={{ ml: 1 }} label='Development' color='secondary' />
                         </Tooltip>)
                     }
                 </CustomText>
