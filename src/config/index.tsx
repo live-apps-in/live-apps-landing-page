@@ -49,7 +49,7 @@ export const homePageConfig = {
       link: 'https://kittychan.jagalive.in', 
       image: KittyChanLogo,
       id: 'kittychan',
-      description: <>Serving <b style={{ fontSize: 20 }}>400+</b> users in <b style={{ fontSize: 20 }}>8</b> Discord servers. Kitty chan is a <b>Discord bot</b>, powerful enough to moderate your Discord server</>,
+      description: <>Serving <b style={{ fontSize: 20 }}>600+</b> users in <b style={{ fontSize: 20 }}>9</b> Discord servers. Kitty chan is a <b>Discord bot</b>, powerful enough to moderate your Discord server</>,
       isBeta: false,
       isLive: true,
       features: [
