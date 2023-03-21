@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import { AmazonS3Logo, AppLogoFullImage, AWSDynamoDBLogo, CassandraDBLogo, DiscordLogo, DockerLogo, ExpoLogo, ExpressJSLogo, FirebaseLogo, GithubActionsLogo, GithubLogo, GraphQLLogo, InversifyJSLogo, JenkinsLogo, KittyChanLogo, MaterialUILogo, MongoDBLogo, NestJSLogo, NextJSLogo, NginxLogo, NodeJSLogo, NotionLogo, PostmanLogo, RabbitMQLogo, ReactLogo, RedisLogo, ReduxLogo, StyledComponentsLogo } from "src/assets";
+import { AmazonS3Logo, AppLogoFullImage, AWSDynamoDBLogo, CassandraDBLogo, DiscordLogo, DockerLogo, ExpoLogo, ExpressJSLogo, FirebaseLogo, GithubActionsLogo, GithubLogo, GraphQLLogo, GrpcLogo, InversifyJSLogo, JenkinsLogo, KittyChanLogo, MaterialUILogo, MongoDBLogo, NestJSLogo, NextJSLogo, NginxLogo, NodeJSLogo, NotionLogo, PostmanLogo, RabbitMQLogo, ReactLogo, RedisLogo, ReduxLogo, StyledComponentsLogo } from "src/assets";
 
 // custom designs
 // https://cssgradient.io/blog/css-gradient-text/ -- reference
@@ -265,6 +265,11 @@ export const homePageConfig = {
           name: 'RabbitMQ',
           link: 'https://www.rabbitmq.com/',
           image: RabbitMQLogo,
+        },
+        {
+          name: 'gRPC',
+          link: 'https://grpc.io/',
+          image: GrpcLogo,
         },
       ]
     },

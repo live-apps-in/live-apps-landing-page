@@ -14,6 +14,7 @@ import GithubActionsLogo from "src/assets/img/svg-code/github-actions.svg";
 import GithubLogo from "src/assets/img/svg-code/github.svg";
 import GoogleAssistantLogo from "src/assets/img/svg-code/google-assistant.svg";
 import GraphQLLogo from "src/assets/img/svg-code/graphql.svg";
+import GrpcLogo from "src/assets/img/svg-code/grpc.svg";
 import InversifyJSLogo from "src/assets/img/svg-code/inversify-js.svg";
 import JenkinsLogo from "src/assets/img/svg-code/jenkins.svg";
 import MaterialUILogo from "src/assets/img/svg-code/material-ui.svg";
@@ -48,6 +49,7 @@ export {
     GithubLogo,
     GoogleAssistantLogo,
     GraphQLLogo,
+    GrpcLogo,
     InversifyJSLogo,
     JenkinsLogo,
     MaterialUILogo,
