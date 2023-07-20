@@ -222,6 +222,11 @@ export const homePageConfig = {
           image: MaterialUILogo,
         },
         {
+          name: 'Tailwindcss',
+          link: 'https://tailwindcss.com',
+          image: 'https://w7.pngwing.com/pngs/754/29/png-transparent-tailwindcss-hd-logo-thumbnail.png',
+        },
+        {
           name: 'Redux',
           link: 'https://redux.js.org/',
           image: ReduxLogo,
@@ -270,6 +275,16 @@ export const homePageConfig = {
           name: 'gRPC',
           link: 'https://grpc.io/',
           image: GrpcLogo,
+        },
+        {
+          name: 'Socket.io',
+          link: 'https://socket.io/',
+          image: 'https://socket.io/images/logo.svg',
+        },
+        {
+          name: 'Jest',
+          link: 'https://jestjs.io',
+          image: 'https://w7.pngwing.com/pngs/152/247/png-transparent-jest-hd-logo.png',
         },
       ]
     },
@@ -362,22 +377,28 @@ export const homePageConfig = {
   contributors: [
     { 
       name: 'Dikshit', 
-      image: 'https://media.licdn.com/dms/image/D5603AQEgdtp1FdEptQ/profile-displayphoto-shrink_800_800/0/1670564217455?e=1678924800&v=beta&t=mT0ulR2HUys4wX8kR_OkXqx4Oze86vUHleLoTpJp-Dc', 
+      image: 'https://avatars.githubusercontent.com/u/62920150?v=4', 
       role: 'Frontend Web', 
       link: 'https://portfolio.dikshit.live' 
     },
     { 
       name: 'Jaga', 
-      image: 'https://media.licdn.com/dms/image/C4D03AQE36ew5sx7HmQ/profile-displayphoto-shrink_800_800/0/1656441989564?e=1678924800&v=beta&t=kFq77FkWMx7inw5MZpfY2wTwQLLSQbEE8LafXx48UMA', 
+      image: 'https://avatars.githubusercontent.com/u/58385390?v=4', 
       role: 'Backend & DevOps', 
-      link: 'https://www.linkedin.com/in/jagadheesh-m-77927817b/' 
+      link: 'https://github.com/jaga-live' 
     },
     { 
       name: 'Inderajith', 
-      image: 'https://media.licdn.com/dms/image/C5103AQHK3EqoFyO_2A/profile-displayphoto-shrink_800_800/0/1580924156215?e=1678924800&v=beta&t=sDpZaqptgFpjv60-Z39rGHksBilmAAYVbApzZNJfjCg', 
+      image: 'https://avatars.githubusercontent.com/u/44730912?v=4', 
       role: 'Mobile App & UI/UX', 
-      link: 'https://portfolio.dikshit.live' 
-    }
+      link: 'https://github.com/inderajith' 
+    },
+     { 
+      name: 'Deepak', 
+      image: 'https://avatars.githubusercontent.com/u/99487104?v=4', 
+      role: 'Full Stack Dev', 
+      link: 'https://iamdeepakvel.vercel.app' 
+    },
   ],
   joinUs: {
     description: <>We are actively looking for contributors in <b>AI/ML, UI/UX</b> domains.</>,
